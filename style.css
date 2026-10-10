@@ -173,6 +173,58 @@ body {
   transform: scale(1.03);
   box-shadow: 0 10px 25px rgba(216, 139, 169, 0.25);
 }
+/* Контакты */
+.contacts {
+  background: #3a2a35;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px 40px;
+}
+
+.contacts h2 {
+  font-size: 42px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.contacts > p {
+  font-size: 17px;
+  opacity: 0.7;
+  margin-bottom: 40px;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #d88ba9;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.socials a:hover {
+  transform: translateY(-5px) scale(1.1);
+  background: #c07594;
+}
+
+.copyright {
+  margin-top: 60px;
+  font-size: 13px !important;
+  opacity: 0.4 !important;
+}
 
 /* Адаптив */
 @media (max-width: 768px) {
@@ -227,5 +279,18 @@ body {
 
   .gallery-grid img {
     height: 180px;
+  }
+  .contacts {
+    padding: 60px 15px 30px;
+  }
+
+  .contacts h2 {
+    font-size: 28px;
+  }
+
+  .socials a {
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
   }
 }
