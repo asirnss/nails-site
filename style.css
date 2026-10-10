@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #3a2a35;
+  line-height: 1.6;
+}
+
+/* Первый экран */
+.hero {
+  background: linear-gradient(rgba(250, 240, 245, 0.7), rgba(245, 225, 235, 0.8)),
+              url('https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1600') center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.subtitle {
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #b76e8a;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 80px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #3a2a35;
+  margin-bottom: 25px;
+}
+
+.tagline {
+  font-size: 20px;
+  color: #6b5560;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.btn {
+  display: inline-block;
+  background: #d88ba9;
+  color: #fff;
+  padding: 16px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.3s;
+  box-shadow: 0 8px 20px rgba(216, 139, 169, 0.3);
+}
+
+.btn:hover {
+  background: #c07594;
+  transform: translateY(-3px);
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 46px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+  }
+
+  .tagline {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 13px 35px;
+    font-size: 14px;
+  }
+}
